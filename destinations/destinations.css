@@ -1,0 +1,60 @@
+#destinations-section {
+    padding: 4vw;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+
+.destinations-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    text-align: left;
+}
+
+.destination-item {
+    background: #f9f9f9;
+    padding: 2vh 2vw;
+    border-radius: 1vh;
+}
+
+.destination-example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 2vh;
+}
+
+.destination-example img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 1vh;
+}
+
+.destination-example.even {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .destination-example {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destination-example.even {
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 5vw;
+    }
+
+    .destination-example img {
+        max-width: 100%;
+        max-height: auto;
+    }
+}

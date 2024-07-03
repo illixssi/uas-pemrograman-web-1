@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking - Indonesian Tourism</title>
+    <link rel="stylesheet" href="./contact_booking.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="icon" href="../tourism.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../culture/culture.html">Culture</a></li>
+                <li><a href="../destinations/destinations.html">Destinations</a></li>
+                <li><a href="../hotels/hotels.html">Hotels</a></li>
+                <li><a href="contact_booking.html">Contact & Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact-section">
+        <h1 class="highlight">Contact & Booking</h1>
+        <div class="contact-icons">
+            <table>
+                <tr>
+                    <td class="icon-cell">
+                        <a href="https://www.instagram.com/felix17x" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                                alt="Instagram" class="contact-icon">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/felix17x" target="_blank"
+                            class="contact-link">@Felix17x</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon-cell">
+                        <a href="mailto:felix17x@gmail.com">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Gmail_Icon_%282013-2020%29.svg/640px-Gmail_Icon_%282013-2020%29.png"
+                                alt="Email" class="contact-icon">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="mailto:felix17x@gmail.com"
+                            class="contact-link">felix17x@gmail.com</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="icon-cell">
+                        <a href="https://wa.me/6281294166971" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                                class="contact-icon">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://wa.me/6281294166971" target="_blank" class="contact-link">Felix - +62 812-9416-6971</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <hr>
+    <section id="booking-section">
+        <h1>Book Your Stay</h1>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="hotel">Select Hotel</label>
+                <select id="hotel" name="hotel" class="form-input" required>
+                    <option value="2200000">Hotel Mulia, Jakarta - Rp 2.200.000</option>
+                    <option value="3000000">Grand Hyatt, Bali - Rp 3.000.000</option>
+                    <option value="1500000">Hotel Santika, Bandung - Rp 1.500.000</option>
+                    <option value="1800000">Novotel, Yogyakarta - Rp 1.800.000</option>
+                    <option value="1600000">Aston, Medan - Rp 1.600.000</option>
+                    <option value="2500000">Sudamala Suites & Villas, Lombok - Rp 2.500.000</option>
+                    <option value="5000000">Misool Eco Resort, Raja Ampat - Rp 5.000.000</option>
+                    <option value="6000000">Plataran Komodo Beach Resort, Pulau Komodo - Rp 6.000.000</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination-type">Select Destination Type</label>
+                <select id="destination-type" name="destination-type" class="form-input" required>
+                    <option value="package">Package</option>
+                    <option value="ala-carte">Ala Carte</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destination">Select Destination</label>
+                <select id="destination" name="destination" class="form-input" required>
+                    <option value="Komodo National Park">Komodo National Park</option>
+                    <option value="Borobudur Temple">Borobudur Temple</option>
+                    <option value="Raja Ampat Islands">Raja Ampat Islands</option>
+                    <option value="Bromo Mountain">Bromo Mountain</option>
+                    <option value="Tana Toraja">Tana Toraja</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="nights">Number of Nights</label>
+                <input type="number" id="nights" name="nights" min="1" value="1" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="total">Total Price</label>
+                <input type="text" id="total" name="total" readonly class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" class="form-input" required>
+                    <option value="Credit Card">Credit Card</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="PayPal">PayPal</option>
+                </select>
+            </div>
+            <button type="submit" class="form-button">Book Now</button>
+        </form>
+    </section>
+    <footer>
+        <p>FELIX - 211011450142 - 05TPLE001</p>
+        <p>&copy; 2024 Indonesian Tourism. All Rights Reserved.</p>
+    </footer>
+    <script src="./contact_booking.js"></script>
+</body>
+
+</html>

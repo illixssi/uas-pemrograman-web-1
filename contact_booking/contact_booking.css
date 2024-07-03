@@ -1,0 +1,88 @@
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vh 0;
+}
+
+.icon-cell {
+    padding: 1vw;
+    text-align: center;
+}
+
+.contact-icon {
+    width: 40px;
+    height: auto;
+}
+
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+#booking-section {
+    text-align: center;
+    padding: 4vw;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 4vh;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 0.5vh;
+}
+
+.form-input, .form-button {
+    padding: 1vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-button {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2vh;
+    max-width: 30%;
+}
+
+.form-button:hover {
+    background-color: #555555;
+}
+
+@media (max-width: 768px) {
+    .contact-icon {
+        width: 30px;
+        height: auto;
+    }
+
+    #booking-form {
+        width: 100%;
+        padding: 0 2vw;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
